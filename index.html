@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <img src="img/vina 01.jpg" alt="" />
+      <img src="img/vina 01.jpg" alt="imagem" />
       <div class="header-container">
         <p>Vinicius Matias, corretor de imóveis.</p>
         <p>+ 8 anos de experiência vendendo imóveis de forma rápida e segura</p>
@@ -30,10 +30,18 @@
         </article>
         <article class="results">
           <h1>📊 Veja meus resultados recentes</h1>
-          <img src="img/imovel_01.webp" alt="venda_01" />
-          <img src="img/imovel_02.webp" alt="venda_02" />
-          <img src="img/imovel_03.webp" alt="venda_03" />
-          <img src="img/imovel_04.jpg" alt="venda_04" />
+          <div class="results-img">
+            <img src="img/imovel_01.webp" alt="venda_01" />
+            <img src="img/imovel_02.webp" alt="venda_02" />
+            <img src="img/imovel_03.webp" alt="venda_03" />
+            <img src="img/imovel_04.jpg" alt="venda_04" />
+          </div>
+          <h1>💬 Depoimentos</h1>
+          <div class="results-img">
+            <img src="img/recomendacao_01.jpg" alt="recomendacao_01" />
+            <img src="img/recomendacao_02.jpg" alt="recomendacao_02" />
+            <img src="img/recomendacao_03.jpg" alt="recomendacao_03" class="last"/>
+          </div>
           <p>
             📌 Esses resultados são fruto de uma estratégia profissional de
             divulgação e acompanhamento exclusivo com cada cliente.
@@ -43,10 +51,10 @@
           <h2>
             🔎 Quer acompanhar mais resultados e bastidores do meu trabalho?
           </h2>
-          <img src="img/provisoria.png" alt="foto" />
+          <img src="img/pfp.jpg" alt="foto" />
           <p>➡️ Siga no Instagram</p>
-          <button>
-            <img src="img/instagram.svg" alt="Instagram" />@vwmatias
+          <button data-url="https://www.instagram.com/vinicius.corretorcwb/" onclick="openWeb(this.dataset.url)">
+            <img src="img/instagram.svg" alt="Instagram" />@vinicius.corretorcwb
           </button>
         </article>
         <article class="FAQ">
@@ -140,7 +148,7 @@
           </li>
         </ul>
         <p>📱 Me acompanhe nas redes:</p>
-        <button><img src="img/instagram.svg" alt="Instagram"> @vwmatias</button>
+        <button data-url="https://www.instagram.com/vinicius.corretorcwb/" onclick="openWeb(this.dataset.url)"><img src="img/instagram.svg" alt="Instagram">@vinicius.corretorcwb</button>
       </div>
     </footer>
     <script src="script.js"></script>

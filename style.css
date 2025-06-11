@@ -12,6 +12,7 @@ body {
   background-color: black;
   position: relative;
   color: white;
+  overflow-x: hidden;
 }
 
 body {
@@ -169,7 +170,7 @@ section > button {
   padding: 1rem;
   margin: auto;
   border-radius: 15px;
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: bold;
   color: white;
   background-color: #d6249f;
@@ -229,10 +230,6 @@ section > button {
 
 /* Footer */
 
-footer {
-  width: 100%;
-}
-
 header > img,
 footer > img {
   background-color: black;
@@ -247,8 +244,11 @@ footer > h2 {
 }
 
 .footer-content {
-  margin: 1rem;
-  font-size: 1.5em;
+  font-size: 1.3em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .footer-content > p {
@@ -274,10 +274,93 @@ footer > h2 {
   color: white;
   border: 3px solid white;
   border-radius: 10px;
-  padding: .2rem 1.5rem;
-  font-size: 1.3em;
+  padding: 1rem;
+  font-size: 0.9em;
 }
 
 .footer-content > button > img {
-  width: 5rem;
+  height: 3rem;
+  width: 50%;
 }
+
+@media (max-width: 320px) {
+  body,
+  p {
+    font-size: 0.9em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 0.9em;
+  }
+
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  header > img {
+    height: 900px;
+    object-fit: cover;
+    object-position: center -50px;
+    display: block;
+  }
+
+  .header-container, article, .instagram {
+    width: 70%;
+    margin: auto;
+  }
+
+  .video_section > button, section > button {
+    width: 50%;
+  }
+  
+  .results-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: stretch;
+  }
+  
+  .last {
+    width: 70%;
+    max-width: 100%;
+    grid-column: span 2;
+    justify-self: center;
+    margin-bottom: 2rem;
+  }
+
+  .results h1 {
+    margin: 1rem 0;
+  }
+
+  .FAQ {
+    width: 90%;
+  }
+
+  footer {
+    font-size: 1em;
+    text-align: center;
+  }
+}
+
+
+/* @media (min-width: 768px) and (max-width: 1023px) {
+  
+}
+
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  
+}
+
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+
+}
+
+
+@media (min-width: 1440px) {
+
+} */

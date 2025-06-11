@@ -12,3 +12,7 @@ video.addEventListener("click", () => {
     ></iframe>
     `;
 });
+
+function openWeb(url) {
+    window.open(url, "_blank")
+}
