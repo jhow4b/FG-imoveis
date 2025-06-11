@@ -74,10 +74,30 @@ main {
 }
 
 .video_section {
-  padding: 1rem;
+  margin: 1rem 0;
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.thumbnail {
+  position: relative;
+  cursor: pointer;
+  max-width: 560px;
+}
+
+.thumbnail img:first-child {
+  width: 100%;
+  height: 500px;
+}
+
+.play {
+  position: absolute;
+  width: 13rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 section h1 {
@@ -107,7 +127,8 @@ section > button {
 }
 
 .results > p {
-  font-size: 1.3em;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .results > img {
@@ -187,7 +208,7 @@ section > button {
 
 .FAQ {
   padding: 1rem;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 .FAQ ul {
@@ -203,14 +224,60 @@ section > button {
 }
 
 .FAQ > ol > li {
-  margin: 1rem;
+  margin: 1.5rem;
 }
 
 /* Footer */
 
+footer {
+  width: 100%;
+}
+
 header > img,
-footer img {
+footer > img {
   background-color: black;
   mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+footer > h2 {
+  margin: 1rem;
+  font-size: 1.8em;
+  font-weight: bolder;
+}
+
+.footer-content {
+  margin: 1rem;
+  font-size: 1.5em;
+}
+
+.footer-content > p {
+  font-size: 1.6em;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.footer-content > ul {
+  list-style: none;
+}
+
+.footer-content > ul > li {
+  margin: 1rem 0;
+}
+
+.footer-content > button {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  background-color: black;
+  color: white;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: .2rem 1.5rem;
+  font-size: 1.3em;
+}
+
+.footer-content > button > img {
+  width: 5rem;
 }
