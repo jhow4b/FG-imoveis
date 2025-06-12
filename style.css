@@ -263,7 +263,7 @@ footer > h2 {
 }
 
 .footer-content > ul > li {
-  margin: 1rem 0;
+  margin: 1rem;
 }
 
 .footer-content > button {
@@ -281,6 +281,16 @@ footer > h2 {
 .footer-content > button > img {
   height: 3rem;
   width: 50%;
+}
+
+button {
+  transition: .1s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  scale: 1.1;
+  filter: brightness(110%);
 }
 
 @media (max-width: 320px) {
@@ -306,6 +316,7 @@ footer > h2 {
     object-position: center -50px;
     display: block;
   }
+
 
   .header-container, article, .instagram {
     width: 70%;
@@ -338,29 +349,340 @@ footer > h2 {
   .FAQ {
     width: 90%;
   }
+  
+  .FAQ > ol > li {
+    margin: 2.5rem;
+  }
 
   footer {
     font-size: 1em;
     text-align: center;
   }
+  
+  h1, h2, h3 {
+    font-size: 2em;
+  }
+  h4 {
+    font-size: 1.2em;
+  }
 }
 
 
-/* @media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  header > img {
+    height: 900px;
+    object-fit: cover;
+    object-position: center 30%;
+    display: block;
+  }
+
+
+  .header-container, article, .instagram {
+    width: 70%;
+    margin: 2.5rem auto;
+  }
+
+  .video_section > button, section > button {
+    width: 30%;
+  }
+
+  .thumbnail {
+    display: flex;
+    justify-content: center;
+  }
   
+  iframe {
+    width: 1000px;
+  }
+  .results-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: stretch;
+  }
+  
+  .last {
+    width: 70%;
+    max-width: 100%;
+    grid-column: span 2;
+    justify-self: center;
+    margin-bottom: 2rem;
+  }
+
+  .results h1 {
+    margin: 1rem 0;
+  }
+
+  .FAQ {
+    width: 90%;
+  }
+  
+  .FAQ > ol > li {
+    margin: 2.5rem;
+  }
+
+  footer {
+    font-size: 1em;
+    text-align: center;
+  }
+  
+  h1, h2, h3, .results > h1, .video_section > h1 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  .instagram > h2 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
 }
 
 
 @media (min-width: 1024px) and (max-width: 1279px) {
+  header > img, footer > img {
+    height: 900px;
+    object-fit: cover;
+    object-position: center 30%;
+    display: block;
+  }
+
+
+  .header-container, article, .instagram, .results, .FAQ {
+    width: 60%;
+    margin: 2.5rem auto;
+  }
+
+  .video_section > button, section > button {
+    width: 30%;
+    padding: 1.5rem 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thumbnail {
+    display: flex;
+    justify-content: center;
+  }
   
+  iframe {
+    width: 1000px;
+  }
+  .results-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: stretch;
+  }
+  
+  .last {
+    width: 70%;
+    max-width: 100%;
+    grid-column: span 2;
+    justify-self: center;
+    margin-bottom: 2rem;
+  }
+
+  .results h1 {
+    margin: 1rem 0;
+  }
+
+  .FAQ {
+    width: 90%;
+  }
+  
+  .FAQ > ol > li {
+    margin: 2.5rem;
+  }
+
+  footer {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  h1, h2, h3, .results > h1, .video_section > h1 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  .instagram > h2 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
 }
 
 
 @media (min-width: 1280px) and (max-width: 1439px) {
+  header > img, footer > img {
+    height: 900px;
+    width: 1000px;
+    margin: auto;
+    object-fit: cover;
+    object-position: center 30%;
+    display: block;
+  }
 
+
+  .header-container, article, .instagram, .results, .FAQ {
+    width: 60%;
+    margin: 2.5rem auto;
+  }
+
+  .video_section > button, section > button {
+    width: 30%;
+    padding: 1.5rem 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thumbnail {
+    display: flex;
+    justify-content: center;
+  }
+  
+  iframe {
+    width: 1000px;
+  }
+  .results-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: stretch;
+  }
+  
+  .last {
+    width: 70%;
+    max-width: 100%;
+    grid-column: span 2;
+    justify-self: center;
+    margin-bottom: 2rem;
+  }
+
+  .results h1 {
+    margin: 1rem 0;
+  }
+
+  .FAQ {
+    width: 90%;
+  }
+  
+  .FAQ > ol > li {
+    margin: 2.5rem;
+  }
+
+  footer {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  h1, h2, h3, .results > h1, .video_section > h1 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  .instagram > h2 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
 }
 
 
 @media (min-width: 1440px) {
+  header > img, footer > img {
+    height: 750px;
+    object-fit: cover;
+    object-position: center 40%;
+    display: block;
+    width: 1000px;
+    margin: auto;
+  }
 
-} */
+
+  .header-container, article, .instagram, .results, .FAQ {
+    width: 40%;
+    margin: 2.5rem auto;
+  }
+
+  .video_section > button, section > button {
+    width: 20%;
+    padding: 1.5rem 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thumbnail {
+    display: flex;
+    justify-content: center;
+  }
+  
+  iframe {
+    width: 1000px;
+  }
+  .results-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: stretch;
+  }
+  
+  .last {
+    width: 70%;
+    max-width: 100%;
+    grid-column: span 2;
+    justify-self: center;
+    margin-bottom: 2rem;
+  }
+
+  .results h1 {
+    margin: 1rem 0;
+  }
+  
+  .FAQ > ol > li {
+    margin: 2.5rem;
+  }
+
+  footer {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  h1, h2, h3, .results > h1, .video_section > h1 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  .instagram > h2 {
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  .FAQ {
+    font-size: 1.3em;
+  }
+}
