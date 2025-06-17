@@ -25,6 +25,11 @@ img {
   width: 100%;
 }
 
+header > img {
+  height: 400px;
+  object-fit: cover;
+}
+
 .header-container {
   display: flex;
   flex-direction: column;
@@ -299,6 +304,11 @@ button:hover {
     font-size: 0.9em;
   }
 
+  header > img {
+    object-fit: cover;
+    height: 500px;
+  }
+
   h1,
   h2,
   h3,
@@ -311,10 +321,10 @@ button:hover {
 
 @media (min-width: 481px) and (max-width: 767px) {
   header > img {
-    height: 900px;
+    height: 750px;
     object-fit: cover;
-    object-position: center -50px;
     display: block;
+    margin-bottom: 1rem;
   }
 
 
@@ -527,7 +537,6 @@ button:hover {
 @media (min-width: 1280px) and (max-width: 1439px) {
   header > img, footer > img {
     height: 900px;
-    width: 1000px;
     margin: auto;
     object-fit: cover;
     object-position: center 30%;
@@ -607,12 +616,20 @@ button:hover {
 
 
 @media (min-width: 1440px) {
-  header > img, footer > img {
-    height: 750px;
+  footer > img {
+    height: 900px;
     object-fit: cover;
     object-position: center 40%;
     display: block;
     width: 1000px;
+    margin: auto;
+  }
+
+  header > img {
+    height: 1000px;
+    object-fit: cover;
+    object-position: center 40%;
+    display: block;
     margin: auto;
   }
 

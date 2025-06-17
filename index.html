@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FG Imoveis</title>
+    <title>Vinicius Matias - Corretor de Imóveis</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/img/favico.png" type="image/x-icon">
   </head>
   <body>
     <header>
-      <img src="img/vina 01.jpg" alt="imagem" />
+      <img src="img/Vina.jpg" alt="imagem" />
       <div class="header-container">
         <p>Vinicius Matias<br>corretor de imóveis.</p>
         <p>+ 8 anos de experiência vendendo imóveis de forma rápida e segura</p>
-        <button>
+        <button data-url="https://wa.me/41998563393" onclick="openWeb(this.dataset.url)">
           <p>Fale comigo no WhatsApp</p>
           <img src="img/whatsapp.svg" alt="WhatsApp" />
         </button>
@@ -26,7 +27,7 @@
             <img src="img/thumb.png" alt="thumb" class="imagem">
             <img src="img/play.svg" alt="PLAY" class="play">
           </div>
-          <button>📣 Quero anunciar meu imóvel</button>
+          <button data-url="https://wa.me/41998563393" onclick="openWeb(this.dataset.url)">📣 Quero anunciar meu imóvel</button>
         </article>
         <article class="results">
           <h1>📊 Veja meus resultados recentes</h1>
@@ -114,7 +115,7 @@
             </li>
           </ol>
         </article>
-        <button>📲 👉 Quero conversar sobre a venda do meu imóvel</button>
+        <button data-url="https://wa.me/41998563393" onclick="openWeb(this.dataset.url)">📲 👉 Quero conversar sobre a venda do meu imóvel</button>
       </section>
     </main>
     <footer>
